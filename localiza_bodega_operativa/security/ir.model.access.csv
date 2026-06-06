@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_localiza_puesto_all,localiza.puesto.all,model_localiza_puesto,,1,1,1,1
+access_localiza_gps_equipo_all,localiza.gps.equipo.all,model_localiza_gps_equipo,,1,1,1,1
+access_localiza_entrega_all,localiza.entrega.all,model_localiza_entrega,,1,1,1,1
+access_localiza_entrega_line_all,localiza.entrega.line.all,model_localiza_entrega_line,,1,1,1,1
+access_localiza_import_wizard_all,localiza.import.wizard.all,model_localiza_import_wizard,,1,1,1,1
+access_localiza_articulo_all,localiza.articulo.all,model_localiza_articulo,,1,1,1,1

@@ -1,0 +1,56 @@
+# -*- coding: utf-8 -*-
+from odoo import models, fields, api
+
+
+class LocalizaNog(models.Model):
+    _name = "localiza.nog"
+    _description = "NOG"
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+
+    has_message = fields.Boolean(string="Has Message")
+    sms_delivery_error = fields.Boolean(string="SMS Delivery error")
+    # ratings: One2many original de Studio omitido para evitar errores; se recrea desde el modelo hijo con Many2one.
+    active = fields.Boolean(string="Activo")
+    color = fields.Integer(string="Color")
+    moneda = fields.Many2one("res.currency", string="Moneda", ondelete="set null")
+    name = fields.Char(string="Descripción")
+    char_field_8ul_1jqif0ir1 = fields.Char(string="X Studio Char Field 8Ul 1Jqif0Ir1")
+    contrato_emitido = fields.Binary(string="Contrato emitido: ")
+    filename_for_binary_field_vefh4 = fields.Char(string="Filename for x_studio_binary_field_VeFH4")
+    moneda_2 = fields.Many2one("res.currency", string="Moneda", ondelete="set null")
+    fecha = fields.Date(string="Fecha")
+    fecha_de_inicio = fields.Datetime(string="Fecha de inicio")
+    fecha_de_finalizacion = fields.Datetime(string="Fecha de finalización")
+    descripcion_de_la_adquisicion = fields.Text(string="Descripción de la Adquisición")
+    empresa = fields.Many2one("res.partner", string="EMPRESA", ondelete="set null")
+    entidad = fields.Many2one("res.partner", string="Entidad", ondelete="set null")
+    empresa_2 = fields.Char(string="EMPRESA")
+    entidad_adjudicada = fields.Char(string="ENTIDAD ADJUDICADA")
+    estatus = fields.Char(string="Estatus", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    estatus_2 = fields.Many2one("localiza.nog.estatus", string="Estatus", ondelete="set null")
+    fecha_de_adjudicacion = fields.Date(string="Fecha de Adjudicación")
+    fecha_y_hora_de_visita = fields.Datetime(string="Fecha y hora de visita")
+    hora_de_presentacion = fields.Char(string="Hora de Presentación")
+    hora_de_visita = fields.Char(string="Hora de Visita")
+    imagen = fields.Binary(string="Imagen")
+    estado_de_kanban = fields.Char(string="Estado de kanban", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    lugar_de_visita = fields.Char(string="Lugar de Visita")
+    verificar_nog = fields.Many2one("localiza.nog.verificacion", string="Verificar NOG", ondelete="set null")
+    periodos = fields.Many2one("localiza.periodo", string="Periodos", ondelete="set null")
+    fecha_de_adjudicacion_2 = fields.Many2one("localiza.nog.fecha.adjudicacion", string="Fecha de Adjudicación", ondelete="set null")
+    monto_por_agente = fields.Float(string="Monto por Agente")
+    no_guardias_gps = fields.Integer(string="No. Guardias / GPS")
+    notas = fields.Html(string="Notas")
+    obs = fields.Html(string="OBS")
+    observaciones = fields.Text(string="Observaciones")
+    correo_electronico = fields.Char(string="Correo electrónico")
+    contacto = fields.Many2one("res.partner", string="Contacto", ondelete="set null")
+    telefono = fields.Char(string="Teléfono")
+    alta_prioridad = fields.Boolean(string="Alta Prioridad")
+    sequence = fields.Integer(string="Secuencia")
+    etapa = fields.Many2one("localiza.nog.stage", string="Etapa", ondelete="set null")
+    etiquetas = fields.Many2many("localiza.nog.tag", string="Etiquetas")
+    tipo_de_evento = fields.Char(string="Tipo de Evento", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    responsable = fields.Many2one("res.users", string="Responsable", ondelete="set null")
+    valor = fields.Float(string="Valor")
+    verificar = fields.Char(string="Verificar", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")

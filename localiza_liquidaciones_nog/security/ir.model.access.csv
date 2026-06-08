@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_localiza_nog_estatus_user,Estatus de NOG,model_localiza_nog_estatus,base.group_user,1,1,1,1
+access_localiza_nog_fecha_adjudicacion_user,Fecha de Adjudicación,model_localiza_nog_fecha_adjudicacion,base.group_user,1,1,1,1
+access_localiza_liquidacion_user,LIQUIDACION,model_localiza_liquidacion,base.group_user,1,1,1,1
+access_localiza_nog_user,NOG,model_localiza_nog,base.group_user,1,1,1,1
+access_localiza_periodo_user,Periodos,model_localiza_periodo,base.group_user,1,1,1,1
+access_localiza_nog_verificacion_user,Verificar NOG,model_localiza_nog_verificacion,base.group_user,1,1,1,1
+access_localiza_liquidacion_stage_user,LIQUIDACION Stages,model_localiza_liquidacion_stage,base.group_user,1,1,1,1
+access_localiza_liquidacion_tag_user,LIQUIDACION Tags,model_localiza_liquidacion_tag,base.group_user,1,1,1,1
+access_localiza_nog_stage_user,NOG Stages,model_localiza_nog_stage,base.group_user,1,1,1,1
+access_localiza_nog_tag_user,NOG Tags,model_localiza_nog_tag,base.group_user,1,1,1,1

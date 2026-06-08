@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_localiza_liquidaciones_nog_root" name="Localiza Liquidaciones y NOG" sequence="10"/>
+    <menuitem id="menu_localiza_nog_estatus" name="Estatus de NOG" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_nog_estatus" sequence="10"/>
+    <menuitem id="menu_localiza_nog_fecha_adjudicacion" name="Fecha de Adjudicación" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_nog_fecha_adjudicacion" sequence="20"/>
+    <menuitem id="menu_localiza_liquidacion" name="LIQUIDACION" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_liquidacion" sequence="30"/>
+    <menuitem id="menu_localiza_nog" name="NOG" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_nog" sequence="40"/>
+    <menuitem id="menu_localiza_periodo" name="Periodos" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_periodo" sequence="50"/>
+    <menuitem id="menu_localiza_nog_verificacion" name="Verificar NOG" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_nog_verificacion" sequence="60"/>
+    <menuitem id="menu_localiza_liquidacion_stage" name="LIQUIDACION Stages" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_liquidacion_stage" sequence="70"/>
+    <menuitem id="menu_localiza_liquidacion_tag" name="LIQUIDACION Tags" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_liquidacion_tag" sequence="80"/>
+    <menuitem id="menu_localiza_nog_stage" name="NOG Stages" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_nog_stage" sequence="90"/>
+    <menuitem id="menu_localiza_nog_tag" name="NOG Tags" parent="menu_localiza_liquidaciones_nog_root" action="action_localiza_nog_tag" sequence="100"/>
+</odoo>

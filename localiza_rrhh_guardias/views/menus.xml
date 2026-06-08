@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_localiza_rrhh_guardias_root" name="Localiza RRHH y Guardias" sequence="10"/>
+    <menuitem id="menu_localiza_tecnico_formulario" name="Formulario Técnicos" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_tecnico_formulario" sequence="10"/>
+    <menuitem id="menu_localiza_guardia_asignacion" name="Guardias Localiza" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_guardia_asignacion" sequence="20"/>
+    <menuitem id="menu_localiza_guardia_puesto_servicio" name="NOMBRE DEL PUESTO DEL  SERVICIO" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_guardia_puesto_servicio" sequence="30"/>
+    <menuitem id="menu_localiza_rrhh_planilla_pago" name="Planilla de Pagos" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_planilla_pago" sequence="40"/>
+    <menuitem id="menu_localiza_guardia_puesto" name="Puestos Guardias" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_guardia_puesto" sequence="50"/>
+    <menuitem id="menu_localiza_guardia_turno" name="Turnos de guardias" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_guardia_turno" sequence="60"/>
+    <menuitem id="menu_localiza_tecnico" name="Técnicos" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_tecnico" sequence="70"/>
+    <menuitem id="menu_localiza_guardia_asignacion_stage" name="Guardias Asignación Puesto Stages" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_guardia_asignacion_stage" sequence="80"/>
+    <menuitem id="menu_localiza_rrhh_empleado_linea" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_linea" sequence="90"/>
+    <menuitem id="menu_localiza_rrhh_empleado_referencia" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_referencia" sequence="100"/>
+    <menuitem id="menu_localiza_rrhh_empleado_linea_aux" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_linea_aux" sequence="110"/>
+    <menuitem id="menu_localiza_rrhh_empleado_linea_extra" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_linea_extra" sequence="120"/>
+    <menuitem id="menu_localiza_rrhh_empleado_estudio" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_estudio" sequence="130"/>
+    <menuitem id="menu_localiza_rrhh_empleado_experiencia" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_experiencia" sequence="140"/>
+    <menuitem id="menu_localiza_rrhh_empleado_familia" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_familia" sequence="150"/>
+    <menuitem id="menu_localiza_rrhh_empleado_documento" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_documento" sequence="160"/>
+    <menuitem id="menu_localiza_rrhh_empleado_contacto_emergencia" name="hr_employee_line" parent="menu_localiza_rrhh_guardias_root" action="action_localiza_rrhh_empleado_contacto_emergencia" sequence="170"/>
+</odoo>

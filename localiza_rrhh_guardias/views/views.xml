@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_localiza_tecnico_formulario_list" model="ir.ui.view">
+        <field name="name">localiza.tecnico.formulario.list</field>
+        <field name="model">localiza.tecnico.formulario</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="apagado"/>
+                <field name="estado"/>
+                <field name="icc"/>
+                <field name="imei"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_tecnico_formulario_form" model="ir.ui.view">
+        <field name="name">localiza.tecnico.formulario.form</field>
+        <field name="model">localiza.tecnico.formulario</field>
+        <field name="arch" type="xml">
+            <form string="Formulario Técnicos">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="apagado"/>
+                            <field name="estado"/>
+                            <field name="icc"/>
+                            <field name="imei"/>
+                            <field name="modelo"/>
+                            <field name="no_orden"/>
+                            <field name="no_serie"/>
+                            <field name="revisado"/>
+                            <field name="sequence"/>
+                            <field name="sim"/>
+                            <field name="tamper"/>
+                            <field name="tecnico"/>
+                            <field name="tipo_de_servicios"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_tecnico_formulario" model="ir.actions.act_window">
+        <field name="name">Formulario Técnicos</field>
+        <field name="res_model">localiza.tecnico.formulario</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_guardia_asignacion_list" model="ir.ui.view">
+        <field name="name">localiza.guardia.asignacion.list</field>
+        <field name="model">localiza.guardia.asignacion</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="color"/>
+                <field name="estado"/>
+                <field name="fecha_de_registro"/>
+                <field name="estado_de_kanban"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_guardia_asignacion_form" model="ir.ui.view">
+        <field name="name">localiza.guardia.asignacion.form</field>
+        <field name="model">localiza.guardia.asignacion</field>
+        <field name="arch" type="xml">
+            <form string="Guardias Localiza">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="color"/>
+                            <field name="name"/>
+                            <field name="estado"/>
+                            <field name="fecha_de_registro"/>
+                            <field name="estado_de_kanban"/>
+                            <field name="empleado"/>
+                            <field name="puestos_guardias"/>
+                            <field name="turnos_de_guardias"/>
+                            <field name="alta_prioridad"/>
+                            <field name="sequence"/>
+                            <field name="etapa"/>
+                            <field name="responsable"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_guardia_asignacion" model="ir.actions.act_window">
+        <field name="name">Guardias Localiza</field>
+        <field name="res_model">localiza.guardia.asignacion</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_guardia_puesto_servicio_list" model="ir.ui.view">
+        <field name="name">localiza.guardia.puesto.servicio.list</field>
+        <field name="model">localiza.guardia.puesto.servicio</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_guardia_puesto_servicio_form" model="ir.ui.view">
+        <field name="name">localiza.guardia.puesto.servicio.form</field>
+        <field name="model">localiza.guardia.puesto.servicio</field>
+        <field name="arch" type="xml">
+            <form string="NOMBRE DEL PUESTO DEL  SERVICIO">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_guardia_puesto_servicio" model="ir.actions.act_window">
+        <field name="name">NOMBRE DEL PUESTO DEL  SERVICIO</field>
+        <field name="res_model">localiza.guardia.puesto.servicio</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_planilla_pago_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.planilla.pago.list</field>
+        <field name="model">localiza.rrhh.planilla.pago</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="fecha"/>
+                <field name="recibo_de_nomina"/>
+                <field name="regla_salarial"/>
+                <field name="entrada_de_recibo_de_nomina"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_planilla_pago_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.planilla.pago.form</field>
+        <field name="model">localiza.rrhh.planilla.pago</field>
+        <field name="arch" type="xml">
+            <form string="Planilla de Pagos">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="fecha"/>
+                            <field name="recibo_de_nomina"/>
+                            <field name="regla_salarial"/>
+                            <field name="entrada_de_recibo_de_nomina"/>
+                            <field name="empleado"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_planilla_pago" model="ir.actions.act_window">
+        <field name="name">Planilla de Pagos</field>
+        <field name="res_model">localiza.rrhh.planilla.pago</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_guardia_puesto_list" model="ir.ui.view">
+        <field name="name">localiza.guardia.puesto.list</field>
+        <field name="model">localiza.guardia.puesto</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="avatar"/>
+                <field name="area_de_puesto"/>
+                <field name="descripcion_del_puesto"/>
+                <field name="turnos_de_guardias"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_guardia_puesto_form" model="ir.ui.view">
+        <field name="name">localiza.guardia.puesto.form</field>
+        <field name="model">localiza.guardia.puesto</field>
+        <field name="arch" type="xml">
+            <form string="Puestos Guardias">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="avatar"/>
+                            <field name="name"/>
+                            <field name="area_de_puesto"/>
+                            <field name="descripcion_del_puesto"/>
+                            <field name="turnos_de_guardias"/>
+                            <field name="guardias_localiza"/>
+                            <field name="n_de_guardias"/>
+                            <field name="new_unoamuchos"/>
+                            <field name="pipeline_status_bar"/>
+                            <field name="sequence"/>
+                            <field name="ubicacion_del_puesto"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_guardia_puesto" model="ir.actions.act_window">
+        <field name="name">Puestos Guardias</field>
+        <field name="res_model">localiza.guardia.puesto</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_guardia_turno_list" model="ir.ui.view">
+        <field name="name">localiza.guardia.turno.list</field>
+        <field name="model">localiza.guardia.turno</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_guardia_turno_form" model="ir.ui.view">
+        <field name="name">localiza.guardia.turno.form</field>
+        <field name="model">localiza.guardia.turno</field>
+        <field name="arch" type="xml">
+            <form string="Turnos de guardias">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_guardia_turno" model="ir.actions.act_window">
+        <field name="name">Turnos de guardias</field>
+        <field name="res_model">localiza.guardia.turno</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_tecnico_list" model="ir.ui.view">
+        <field name="name">localiza.tecnico.list</field>
+        <field name="model">localiza.tecnico</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="aplica_para_formulario"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_tecnico_form" model="ir.ui.view">
+        <field name="name">localiza.tecnico.form</field>
+        <field name="model">localiza.tecnico</field>
+        <field name="arch" type="xml">
+            <form string="Técnicos">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="aplica_para_formulario"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_tecnico" model="ir.actions.act_window">
+        <field name="name">Técnicos</field>
+        <field name="res_model">localiza.tecnico</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_guardia_asignacion_stage_list" model="ir.ui.view">
+        <field name="name">localiza.guardia.asignacion.stage.list</field>
+        <field name="model">localiza.guardia.asignacion.stage</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_guardia_asignacion_stage_form" model="ir.ui.view">
+        <field name="name">localiza.guardia.asignacion.stage.form</field>
+        <field name="model">localiza.guardia.asignacion.stage</field>
+        <field name="arch" type="xml">
+            <form string="Guardias Asignación Puesto Stages">
+                <sheet>
+                    <group>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_guardia_asignacion_stage" model="ir.actions.act_window">
+        <field name="name">Guardias Asignación Puesto Stages</field>
+        <field name="res_model">localiza.guardia.asignacion.stage</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_linea_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.linea.list</field>
+        <field name="model">localiza.rrhh.empleado.linea</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_hr_employee"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_linea_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.linea.form</field>
+        <field name="model">localiza.rrhh.empleado.linea</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="x_hr_employee"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_linea" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.linea</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_referencia_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.referencia.list</field>
+        <field name="model">localiza.rrhh.empleado.referencia</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_hr_employee"/>
+                <field name="parentesco"/>
+                <field name="sequence"/>
+                <field name="telefono"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_referencia_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.referencia.form</field>
+        <field name="model">localiza.rrhh.empleado.referencia</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="x_hr_employee"/>
+                            <field name="name"/>
+                            <field name="parentesco"/>
+                            <field name="sequence"/>
+                            <field name="telefono"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_referencia" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.referencia</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_linea_aux_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.linea.aux.list</field>
+        <field name="model">localiza.rrhh.empleado.linea.aux</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_hr_employee"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_linea_aux_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.linea.aux.form</field>
+        <field name="model">localiza.rrhh.empleado.linea.aux</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="x_hr_employee"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_linea_aux" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.linea.aux</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_linea_extra_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.linea.extra.list</field>
+        <field name="model">localiza.rrhh.empleado.linea.extra</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_hr_employee"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_linea_extra_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.linea.extra.form</field>
+        <field name="model">localiza.rrhh.empleado.linea.extra</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="x_hr_employee"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_linea_extra" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.linea.extra</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_estudio_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.estudio.list</field>
+        <field name="model">localiza.rrhh.empleado.estudio</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_hr_employee"/>
+                <field name="archivo"/>
+                <field name="filename_for_binary_field_7j6l0"/>
+                <field name="centro"/>
+                <field name="grado_academico"/>
+                <field name="no"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_estudio_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.estudio.form</field>
+        <field name="model">localiza.rrhh.empleado.estudio</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="x_hr_employee"/>
+                            <field name="name"/>
+                            <field name="archivo"/>
+                            <field name="filename_for_binary_field_7j6l0"/>
+                            <field name="centro"/>
+                            <field name="grado_academico"/>
+                            <field name="no"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_estudio" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.estudio</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_experiencia_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.experiencia.list</field>
+        <field name="model">localiza.rrhh.empleado.experiencia</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="currency"/>
+                <field name="x_hr_employee"/>
+                <field name="jefe_inmediato"/>
+                <field name="currency_2"/>
+                <field name="motivo_de_retiro"/>
+                <field name="puesto"/>
+                <field name="salario"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_experiencia_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.experiencia.form</field>
+        <field name="model">localiza.rrhh.empleado.experiencia</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="currency"/>
+                            <field name="x_hr_employee"/>
+                            <field name="name"/>
+                            <field name="jefe_inmediato"/>
+                            <field name="currency_2"/>
+                            <field name="motivo_de_retiro"/>
+                            <field name="puesto"/>
+                            <field name="salario"/>
+                            <field name="salario_2"/>
+                            <field name="sequence"/>
+                            <field name="telefono"/>
+                            <field name="telefono_de_contacto"/>
+                            <field name="tiempo_laborado"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_experiencia" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.experiencia</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_familia_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.familia.list</field>
+        <field name="model">localiza.rrhh.empleado.familia</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_hr_employee"/>
+                <field name="apellidos"/>
+                <field name="n"/>
+                <field name="nombres"/>
+                <field name="sequence"/>
+                <field name="telefono_celular"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_familia_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.familia.form</field>
+        <field name="model">localiza.rrhh.empleado.familia</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="x_hr_employee"/>
+                            <field name="name"/>
+                            <field name="apellidos"/>
+                            <field name="n"/>
+                            <field name="nombres"/>
+                            <field name="sequence"/>
+                            <field name="telefono_celular"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_familia" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.familia</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_documento_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.documento.list</field>
+        <field name="model">localiza.rrhh.empleado.documento</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="empleado"/>
+                <field name="fecha_de_emision"/>
+                <field name="fecha_de_vencimiento"/>
+                <field name="usuario"/>
+                <field name="empleado_2"/>
+                <field name="nombre_del_archivo"/>
+                <field name="filename_for_binary_field_lg2z9"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_documento_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.documento.form</field>
+        <field name="model">localiza.rrhh.empleado.documento</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="empleado"/>
+                            <field name="name"/>
+                            <field name="fecha_de_emision"/>
+                            <field name="fecha_de_vencimiento"/>
+                            <field name="usuario"/>
+                            <field name="empleado_2"/>
+                            <field name="nombre_del_archivo"/>
+                            <field name="filename_for_binary_field_lg2z9"/>
+                            <field name="sequence"/>
+                            <field name="tipo_de_documento"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_documento" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.documento</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_rrhh_empleado_contacto_emergencia_list" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.contacto.emergencia.list</field>
+        <field name="model">localiza.rrhh.empleado.contacto.emergencia</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_hr_employee"/>
+                <field name="parentesco"/>
+                <field name="sequence"/>
+                <field name="telefono_celular"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_rrhh_empleado_contacto_emergencia_form" model="ir.ui.view">
+        <field name="name">localiza.rrhh.empleado.contacto.emergencia.form</field>
+        <field name="model">localiza.rrhh.empleado.contacto.emergencia</field>
+        <field name="arch" type="xml">
+            <form string="hr_employee_line">
+                <sheet>
+                    <group>
+                            <field name="x_hr_employee"/>
+                            <field name="name"/>
+                            <field name="parentesco"/>
+                            <field name="sequence"/>
+                            <field name="telefono_celular"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_rrhh_empleado_contacto_emergencia" model="ir.actions.act_window">
+        <field name="name">hr_employee_line</field>
+        <field name="res_model">localiza.rrhh.empleado.contacto.emergencia</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>
